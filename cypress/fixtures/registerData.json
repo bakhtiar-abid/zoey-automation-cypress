@@ -1,0 +1,14 @@
+{
+  "firstName" : "Test",
+  "lastName": "User",
+  "email": "test.user3@gmail.com",
+  "address": "test address",
+  "contact": "019248574894",
+  "password": "123456",
+  "successMessage": {
+    "registerSuccesMessage": "THIS PAGE IS UNDER MAINTENANCE"
+  },
+  "errorMessage": {
+    "existingAccountErrorMessage": "The email address is already in use by another account."
+  }
+}
