@@ -1,14 +1,18 @@
 {
   "firstName" : "Test",
   "lastName": "User",
-  "email": "test.user3@gmail.com",
+  "email": "test.user4@gmail.com",
   "address": "test address",
   "contact": "019248574894",
   "password": "123456",
+  "confirmPassword": "1234567",
+  "invalidPass": "123",
   "successMessage": {
     "registerSuccesMessage": "THIS PAGE IS UNDER MAINTENANCE"
   },
   "errorMessage": {
-    "existingAccountErrorMessage": "The email address is already in use by another account."
+    "existingAccountErrorMessage": "The email address is already in use by another account.",
+    "leastPassChar": "Password should be at least 6 characters",
+    "passWordNotMatchError": "Passwords didn't match!"
   }
 }
