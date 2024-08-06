@@ -25,3 +25,10 @@
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
 require('cypress-xpath');
+
+Cypress.Commands.add('login',(email, password)=>{
+    cy.visit(Cypress.env('loginUrl'))
+    cy.xpath('//input[@name="email"]').type(email);
+    cy.get('#pass').type(password);
+    cy.xpath('//button[normalize-space()="Sign In"]').click();
+})
