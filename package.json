@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "npx cypress run --headed",
+    "test": "npx cypress run --headless",
     "test:login": "npx cypress run --spec cypress/e2e/tests/loginTest.cy.js"
   },
   "author": "",
