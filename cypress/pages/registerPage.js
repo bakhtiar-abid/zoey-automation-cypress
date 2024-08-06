@@ -15,11 +15,13 @@ export class registerPage {
         passWordNotMatch: '//*[contains(text(),"Passwords didn\'t match!")]'
     }
 
-    openUrl(){
-        cy.visit(Cypress.env('URL')).then(()=>{
-            cy.url().should('include', '/register');
-        })
-    }
+
+
+  openUrl(){
+      cy.visit(Cypress.env('URL')).then(()=>{
+          cy.url().should('include', '/register');
+      })
+  }
 
    enterFirstName(FName){
         cy.xpath(this.weblocatorsRegisterPage.firstName, { timeout: 10000 }).type(FName)
@@ -54,23 +56,26 @@ export class registerPage {
 
     }
 
-    successfullyRegisteredPageMessage(successMessage){
+    successfullyRegisteredPageMessage(){
 
-        cy.xpath(this.weblocatorsRegisterPage.registerPageSuccess).should('include.text', successMessage)
+       return (cy.xpath(this.weblocatorsRegisterPage.registerPageSuccess))
 
 
     }
 
-    errorForExistingAccount(errMsg){
-        cy.xpath(this.weblocatorsRegisterPage.existingAccountErrorMesage).should("have.text",errMsg)
+    errorForExistingAccount(){
+     return   (cy.xpath(this.weblocatorsRegisterPage.existingAccountErrorMesage))
     }
 
-    errorForPassCharacter(errMsg){
-        cy.xpath(this.weblocatorsRegisterPage.passCharaterErr).should("have.text",errMsg)
+    errorForPassCharacter(){
+      return  (cy.xpath(this.weblocatorsRegisterPage.passCharaterErr))
     }
 
-    errorPassCheck(errMsg){
-        cy.xpath(this.weblocatorsRegisterPage.passWordNotMatch).should("have.text",errMsg)
+    errorPassCheck(){
+        return(cy.xpath(this.weblocatorsRegisterPage.passWordNotMatch))
+
     }
+
+
 
 }
