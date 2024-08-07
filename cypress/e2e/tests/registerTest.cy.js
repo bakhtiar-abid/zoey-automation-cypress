@@ -2,6 +2,7 @@
 
 import {registerPage} from "../../pages/registerPage"
 import registerData from "../../fixtures/registerData.json"
+import { faker } from '@faker-js/faker';
 
 const registerObj = new registerPage()
 
@@ -17,7 +18,7 @@ describe('Registration', ()=>{
         registerObj.enterLastName(registerData.lastName);
         registerObj.enterAddress(registerData.address);
         registerObj.enterContact(registerData.contact);
-        registerObj.enterEmail(registerData.email);
+        registerObj.enterEmail(faker.internet.email());
         registerObj.enterPassword(registerData.password);
         registerObj.clickSignUpButton();
         registerObj.successfullyRegisteredPageMessage(registerData.successMessage.registerSuccesMessage).should('include.text', registerData.successMessage.registerSuccesMessage);
