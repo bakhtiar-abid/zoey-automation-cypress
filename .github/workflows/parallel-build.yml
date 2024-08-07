@@ -20,6 +20,13 @@ jobs:
         with:
           command: npm run test:register
 
+      - name: Cypress Test Report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: Mochawesome HTML Report - Registration Flow
+          path: cypress/reports/html
+
   Login-Test-run:
     runs-on: ubuntu-22.04
     steps:
@@ -38,3 +45,10 @@ jobs:
         uses: cypress-io/github-action@v6
         with:
           command: npm run test:login
+
+      - name: Cypress Test Report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: Mochawesome HTML Report - Login Flow
+          path: cypress/reports/html
