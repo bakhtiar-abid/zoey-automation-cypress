@@ -6,7 +6,7 @@ import { faker } from '@faker-js/faker';
 
 const registerObj = new registerPage()
 
-describe('Registration', ()=>{
+describe('Registration Flow Automation', ()=>{
 
     beforeEach(()=>{
         registerObj.openUrl();

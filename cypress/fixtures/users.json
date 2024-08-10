@@ -1,0 +1,22 @@
+{
+  "_id": "66335c1fc576c5d0fc2bc0a9",
+  "email": "user@gmail.com",
+  "userName": "Test User",
+  "contactNo": "6469152160",
+  "notificationToken": "",
+  "registeredDate": "2024-05-02T09:25:51.485Z",
+  "isActive": true,
+  "scheduledExperiences": [],
+  "pastExperiences": [],
+  "notifications": [
+    {
+      "title": "Welcome to Zoey",
+      "body": "Now it’s time to explore the world with Zoey",
+      "date": "2024-05-02T09:25:51.485Z",
+      "route": "",
+      "reservationID": ""
+    }
+  ],
+  "profileImage": "",
+  "stripeCustomerID": "cus_Q1zt5gAlU3D2Jm"
+}

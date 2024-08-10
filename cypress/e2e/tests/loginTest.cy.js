@@ -7,9 +7,7 @@ const loginObj = new loginPage();
 
 describe.only('Login Data Flow Automation', ()=>{
 
-    // beforeEach(()=>{
-    //     cy.login(loginTestData.login.email, loginTestData.login.password);
-    // })
+
 
     beforeEach(()=>{
         loginObj.openUrl();
