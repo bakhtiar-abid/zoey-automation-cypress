@@ -1,6 +1,6 @@
 
 
-import {registerPage} from "../../pages/registerPage"
+import {registerPage} from "../../pages/RegisterPage"
 import registerData from "../../fixtures/registerData.json"
 import { faker } from '@faker-js/faker';
 

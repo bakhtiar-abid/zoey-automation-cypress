@@ -1,6 +1,6 @@
 import userData from "../../fixtures/users.json"
 import loginTestData from "../../fixtures/loginData.json"
-import {usersPage} from "../../pages/usersPage";
+import {usersPage} from "../../pages/UsersPage";
 
 const usersObj = new usersPage()
 

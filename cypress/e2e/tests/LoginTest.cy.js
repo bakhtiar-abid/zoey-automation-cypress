@@ -1,6 +1,6 @@
 
 import loginTestData from "../../fixtures/loginData.json"
-import {loginPage} from "../../pages/loginPage";
+import {loginPage} from "../../pages/LoginPage";
 
 
 const loginObj = new loginPage();

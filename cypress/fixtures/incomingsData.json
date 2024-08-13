@@ -1,0 +1,25 @@
+{
+  "_id": "636625a0486a807e16433514",
+  "reservationID": "RYPKDVK",
+  "experienceName": "Mountain Biking",
+  "category": "Travel",
+  "subCategory": "Boat Tour",
+  "startTime": "2022-06-16T13:00:00.000Z",
+  "endTime": "2022-06-16T13:00:00.000Z",
+  "userName": "Test User",
+  "received": {
+    "experience": 90,
+    "addons": 200,
+    "total": 290
+  },
+  "allocated": {
+    "experienceVendors": 45,
+    "addonsVendors": 0,
+    "total": 45
+  },
+  "profit": {
+    "experience": 45,
+    "addons": 200,
+    "total": 245
+  }
+}
